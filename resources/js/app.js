@@ -1,6 +1,7 @@
 import VueRouter from 'vue-router';
 import HeaderComponent from "./components/HeaderComponent";
 import TaskListComponent from "./components/TaskListComponent";
+import TaskShowComponent from "./components/TaskShowComponent";
 
 require('./bootstrap');
 
@@ -16,6 +17,12 @@ const router = new VueRouter({
             name: 'task.list',
             component: TaskListComponent
         },
+        {
+            path: '/tasks/:taskId',
+            name: 'task.show',
+            component: TaskShowComponent,
+            props: true
+        }
     ]
 });
 
