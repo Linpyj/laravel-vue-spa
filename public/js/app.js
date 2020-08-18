@@ -53303,6 +53303,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
@@ -53318,6 +53319,10 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
     name: 'task.show',
     component: _components_TaskShowComponent__WEBPACK_IMPORTED_MODULE_3__["default"],
     props: true
+  }, {
+    path: '/tasks/create',
+    name: 'task.create',
+    component: _components_TaskShowComponent__WEBPACK_IMPORTED_MODULE_3__["default"]
   }]
 });
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
