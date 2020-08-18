@@ -33,7 +33,7 @@ const router = new VueRouter({
         {
             path: '/tasks/:taskId/edit',
             name: 'task.edit',
-            component: 'TaskEditComponent',
+            component: TaskEditComponent,
             props: true
         },
     ]
